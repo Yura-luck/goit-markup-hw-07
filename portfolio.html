@@ -26,42 +26,128 @@
     <header class="backround-header">
       <div class="container">
         <div class="header-container">
-          <nav class="nav-header">
-            <a class="logotyp" href="./index.html"
-              ><span class="weblogo">WEB</span>STUDIO</a
-            >
+          <a class="logotyp" href="./index.html"
+            ><span class="weblogo">WEB</span>STUDIO</a
+          >
+          <div class="header-container-mob">
+            <button class="heder-hamburger js-open-menu">
+              <svg class="img-hamburger" width="29.5px" height="18.6px">
+                <use href="./images/icons.svg#icon-hamburger"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="mobile-menu js-menu-container">
+            <button class="menu-close js-close-menu" type="button">
+              <svg class="vector">
+                <use href="./images/icons.svg#icon-Vector"></use>
+              </svg>
+            </button>
+            <div class="container-nav-adress">
+              <nav class="nav-menu">
+                <ul class="">
+                  <li class="nav-li-menu">
+                    <a class="navigation-text" href="./index.html">Studio</a>
+                  </li>
 
-            <ul class="header-container-list">
-              <li class="navigation-li">
-                <a class="navigation" href="./index.html">Studio</a>
-              </li>
+                  <li class="nav-li-menu">
+                    <a
+                      class="navigation-text color-text-porfolio"
+                      href="./portfolio.html"
+                      >Portfolio</a
+                    >
+                  </li>
 
-              <li class="navigation-li">
-                <a class="navigation nav-line" href="./portfolio.html"
-                  >Portfolio</a
-                >
-              </li>
+                  <li class="nav-li-menu">
+                    <a class="navigation-text" href="">Contacts</a>
+                  </li>
+                </ul>
+              </nav>
+              <address class="adress">
+                <ul class="header-contakts-menu">
+                  <li>
+                    <a
+                      class="adress-link-menu"
+                      href="mailto:info@devstudio.com"
+                    >
+                      info@devstudio.com
+                    </a>
+                  </li>
 
-              <li class="navigation-li">
-                <a class="navigation" href="">Contacts</a>
-              </li>
-            </ul>
-          </nav>
-          <address class="adress">
-            <ul class="header-contakts">
-              <li>
-                <a class="adress-link" href="mailto:info@devstudio.com">
-                  info@devstudio.com
+                  <li>
+                    <a class="adress-menu" href="tel:+110001111111"
+                      >+11 (000) 111-11-11
+                    </a>
+                  </li>
+                </ul>
+              </address>
+            </div>
+
+            <ul class="icons-menu">
+              <li class="li-menu-icons">
+                <a class="aicons" href="">
+                  <svg class="svg-footer">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
                 </a>
               </li>
-
-              <li>
-                <a class="adress-link" href="tel:+110001111111"
-                  >+11 (000) 111-11-11
+              <li class="li-menu-icons">
+                <a class="aicons" href="">
+                  <svg class="svg-footer">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="li-menu-icons">
+                <a class="aicons" href="">
+                  <svg class="svg-footer">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="li-menu-icons">
+                <a class="aicons" href="">
+                  <svg class="svg-footer">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
                 </a>
               </li>
             </ul>
-          </address>
+          </div>
+
+          <div class="desktop-heder-conteiner">
+            <nav class="nav-header">
+              <ul class="header-container-list">
+                <li class="navigation-li">
+                  <a class="navigation nav-line" href="./index.html">Studio</a>
+                </li>
+
+                <li class="navigation-li">
+                  <a class="navigation" href="./portfolio.html">Portfolio</a>
+                </li>
+
+                <li class="navigation-li">
+                  <a class="navigation" href="">Contacts</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header-tablet">
+              <address class="adress">
+                <ul class="header-contakts">
+                  <li>
+                    <a class="adress-link" href="mailto:info@devstudio.com">
+                      info@devstudio.com
+                    </a>
+                  </li>
+
+                  <li>
+                    <a class="adress-link" href="tel:+110001111111"
+                      >+11 (000) 111-11-11
+                    </a>
+                  </li>
+                </ul>
+              </address>
+            </div>
+          </div>
         </div>
       </div>
     </header>
@@ -70,19 +156,19 @@
         <div class="container">
           <h1 class="visually-hidden">Examples of work</h1>
           <ul class="button-container">
-            <li>
+            <li class="media-button">
               <button class="portfolio-button" type="button">All</button>
             </li>
-            <li>
+            <li class="media-button">
               <button class="portfolio-button" type="button">Web site</button>
             </li>
-            <li>
+            <li class="media-button">
               <button class="portfolio-button" type="button">App</button>
             </li>
-            <li>
+            <li class="media-button">
               <button class="portfolio-button" type="button">Design</button>
             </li>
-            <li>
+            <li class="media-button">
               <button class="portfolio-button" type="button">Marketing</button>
             </li>
           </ul>
@@ -91,9 +177,13 @@
               <a class="link-port" href="">
                 <div class="porpur-images">
                   <img
+                    class="img-portfolio"
+                    srcset="
+                      ./images/portfolio/banking.app.jpg    1x,
+                      ./images/portfolio/banking.app@2x.jpg 2x
+                    "
                     src="./images/portfolio/banking.app.jpg"
                     alt="Photo banking"
-                    width="360"
                   />
                   <div class="popur">
                     <p class="text-window">
@@ -116,9 +206,13 @@
               <a class="link-port" href="">
                 <div class="porpur-images">
                   <img
+                    class="img-portfolio"
+                    srcset="
+                      ./images/portfolio/payment.jpg    1x,
+                      ./images/portfolio/payment@2x.jpg 2x
+                    "
                     src="./images/portfolio/payment.jpg"
                     alt="Photo banking"
-                    width="360"
                   />
                   <div class="popur">
                     <p class="text-window">
@@ -138,9 +232,13 @@
               <a href="" class="link-port">
                 <div class="porpur-images">
                   <img
+                    class="img-portfolio"
+                    srcset="
+                      ./images/portfolio/meditaton.app.jpg    1x,
+                      ./images/portfolio/meditaton.app@2x.jpg 2x
+                    "
                     src="./images/portfolio/meditaton.app.jpg"
                     alt="Photo banking"
-                    width="360"
                   />
                   <div class="popur">
                     <p class="text-window">
@@ -160,9 +258,13 @@
               <a href="" class="link-port">
                 <div class="porpur-images">
                   <img
+                    class="img-portfolio"
+                    srcset="
+                      ./images/portfolio/taxi.service.jpg    1x,
+                      ./images/portfolio/taxi.service@2x.jpg 2x
+                    "
                     src="./images/portfolio/taxi.service.jpg"
                     alt="Photo banking"
-                    width="360"
                   />
                   <div class="popur">
                     <p class="text-window">
@@ -182,9 +284,13 @@
               <a href="" class="link-port">
                 <div class="porpur-images">
                   <img
+                    class="img-portfolio"
+                    srcset="
+                      ./images/portfolio/illustrations.jpg    1x,
+                      ./images/portfolio/illustrations@2x.jpg 2x
+                    "
                     src="./images/portfolio/illustrations.jpg"
                     alt="Photo banking"
-                    width="360"
                   />
                   <div class="popur">
                     <p class="text-window">
@@ -204,9 +310,13 @@
               <a href="" class="link-port">
                 <div class="porpur-images">
                   <img
+                    class="img-portfolio"
+                    srcset="
+                      ./images/portfolio/online.courses.jpg    1x,
+                      ./images/portfolio/online.courses@2x.jpg 2x
+                    "
                     src="./images/portfolio/online.courses.jpg"
                     alt="Photo banking"
-                    width="360"
                   />
                   <div class="popur">
                     <p class="text-window">
@@ -226,9 +336,13 @@
               <a href="" class="link-port">
                 <div class="porpur-images">
                   <img
+                    class="img-portfolio"
+                    srcset="
+                      ./images/portfolio/instagram.stories.jpg    1x,
+                      ./images/portfolio/instagram.stories@2x.jpg 2x
+                    "
                     src="./images/portfolio/instagram.stories.jpg"
                     alt="Photo banking"
-                    width="360"
                   />
                   <div class="popur">
                     <p class="text-window">
@@ -250,9 +364,13 @@
               <a href="" class="link-port">
                 <div class="porpur-images">
                   <img
+                    class="img-portfolio"
+                    srcset="
+                      ./images/portfolio/organig.food.jpg    1x,
+                      ./images/portfolio/organig.food@2x.jpg 2x
+                    "
                     src="./images/portfolio/organig.food.jpg"
                     alt="Photo banking"
-                    width="360"
                   />
                   <div class="popur">
                     <p class="text-window">
@@ -272,9 +390,13 @@
               <a href="" class="link-port">
                 <div class="porpur-images">
                   <img
+                    class="img-portfolio"
+                    srcset="
+                      ./images/portfolio/fresh.coffe.jpg    1x,
+                      ./images/portfolio/fresh.coffe@2x.jpg 2x
+                    "
                     src="./images/portfolio/fresh.coffe.jpg"
                     alt="Photo banking"
-                    width="360"
                   />
                   <div class="popur">
                     <p class="text-window">
@@ -296,7 +418,7 @@
     </main>
     <footer class="backround-footer">
       <div class="container footer-cointainer">
-        <div class="foterlogo-text">
+        <div class="foter-doubl">
           <div class="footer-one-block">
             <a class="logotyp-footer" href="./index.html"
               ><span class="weblogo">WEB</span>STUDIO</a
@@ -310,28 +432,28 @@
           <div class="footer-social">
             <h3 class="foter-heading">Social media</h3>
             <ul class="icons-footer">
-              <li class="itetems-footer">
+              <li class="items-footer">
                 <a class="icons-link" href="">
                   <svg class="svg-footer">
                     <use href="./images/icons.svg#icon-instagram"></use>
                   </svg>
                 </a>
               </li>
-              <li class="itetems-footer">
+              <li class="items-footer">
                 <a class="icons-link" href="">
                   <svg class="svg-footer">
                     <use href="./images/icons.svg#icon-twitter"></use>
                   </svg>
                 </a>
               </li>
-              <li class="itetems-footer">
+              <li class="items-footer">
                 <a class="icons-link" href="">
                   <svg class="svg-footer">
                     <use href="./images/icons.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
-              <li class="itetems-footer">
+              <li class="items-footer">
                 <a class="icons-link" href="">
                   <svg class="svg-footer">
                     <use href="./images/icons.svg#icon-linkedin"></use>
@@ -341,6 +463,7 @@
             </ul>
           </div>
         </div>
+
         <div class="footer-div">
           <p class="foter-heading">Subscribert</p>
           <form class="form-footer" name=" ">
