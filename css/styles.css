@@ -122,7 +122,7 @@ ul {
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
   transform: translateX(100%);
-  padding-top: 80px;
+
   z-index: 1;
 }
 @media (min-width: 768px) {
@@ -157,13 +157,16 @@ ul {
   background-color: var(--color-blue);
 }
 .container-nav-adress {
+  position: relative;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  max-width: 420px;
 }
 .nav-menu {
   display: block;
+  padding-top: 80px;
 }
 .navigation-text {
   font-family: "Roboto";
@@ -240,6 +243,10 @@ ul {
   line-height: 24px;
   letter-spacing: 0.02em;
   color: #434455;
+}
+.mob-container-menu {
+  min-width: 380px;
+  position: relative;
 }
 .icons-menu {
   display: flex;
@@ -620,8 +627,8 @@ ul {
 @media screen and (min-width: 768px) {
   .sektion-hero {
     max-width: 768px;
-    padding-top: 188px;
-    padding-bottom: 188px;
+    padding-top: 112px;
+    padding-bottom: 112px;
   }
 }
 
@@ -630,6 +637,8 @@ ul {
     max-width: 1400px;
     margin-right: auto;
     margin-left: auto;
+    padding-top: 188px;
+    padding-bottom: 188px;
   }
 }
 
@@ -737,7 +746,7 @@ ul {
   }
   .text {
     color: var(--color-secondary);
-    font-weight: 400;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -781,6 +790,8 @@ ul {
 }
 @media (max-width: 768px) {
   .tagline {
+  }
+  .tagline:not(:last-child) {
     margin-bottom: 76px;
   }
 }
@@ -894,7 +905,6 @@ ul {
 
 @media screen and (min-width: 1200px) {
   .sektion-backround-team {
-    max-width: 1440px;
   }
 }
 
@@ -948,7 +958,6 @@ ul {
 
 @media screen and (min-width: 1200px) {
   .backround-footer {
-    max-width: 1400px;
     padding: 100px 0;
     margin: auto;
   }
@@ -1215,6 +1224,9 @@ ul {
 }
 @media (min-width: 768px) {
   .footer-cointainer {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 582px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -1290,7 +1302,15 @@ ul {
 @media (min-width: 1200px) {
   .footer-cointainer {
     display: flex;
+
+    width: 100%;
   }
+
+  .foter-doubl:not(:last-child) {
+    display: flex;
+    margin-bottom: 0;
+  }
+
   .foterlogo-text {
     display: flex;
     gap: 120px;
